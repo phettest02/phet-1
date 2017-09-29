@@ -13,7 +13,7 @@ sys.setdefaultencoding( 'utf-8' )
 client = LineClient()
 client._qrLogin( "line://au/q/" )
 sys.setdefaultencoding( 'utf-8' )
-helpMessage = """ ざঝণのঝ฿ΘŧŧĽÎη℮Ŧђάίłάήđ
+helpMessage = """ Help
 [Id︎]
 [Mid]
 [Me︎]
