@@ -1,80 +1,86 @@
 # -*- coding: utf-8 -*-
+
 import LINETCR
 from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re
-cl = LINETCR .LINE()
-cl.login( qr = True )
+
+cl = LINETCR.LINE()
+cl.login(qr=True)
 cl.loginResult()
-ki = kk = kc = cl
+
+ki = kk = kc = cl 
+
 print "login success"
-reload (sys)
-sys.setdefaultencoding( 'utf-8' )
-client = LineClient()
-client._qrLogin( "line://au/q/" )
-sys.setdefaultencoding( 'utf-8' )
-helpMessage = """ Help
-[Id︎]
-[Mid]
-[Me︎]
-[TL︎:「Text」]
-[Mc 「mid」]
-[K on/off]
-[Join︎ on/off]
-[Gcancel:︎「Number of people」]
-[Group cancelalll︎]
-[Leave︎ on/off]
-[Add on/off]
-[Share on/off]
-[Message change:「text」]
-[Message check]
-[Confirm]
-[Jam on/off]
-[Change clock:「name」]
-[Up]
-[Cv join]
-[*] Command in the groups [*]
-[Curl]
-[Ourl]
-[url]
-[url:「Group ID」]
-[Invite：「mid」]
-[Kick：「mid」]
-[Ginfo]
-[jointicket]
-[Cancel]
-[Gn 「group name」]
-[Nk 「name」]
-[*] Command kicker only [*]
-[Bye]
-[Kill ban]
-[Kill 「@」]
-[Ban 「@」] By Tag
-[Unban 「@」] By Tag
-[Ban︎] Share Contact
-[Unban︎] Share Contact
-[Banlist︎]
-[Cek ban]
-[Cv mid]
-[Cv ︎invite:「mid」]
-[Cv ︎rename:「name」]
-[Cv ︎gift]
-[Respo︎n]
-[Bot cancel]
-[Title:]
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
+helpMessage =""" ❇ Selfbot Phet hack bot ❇
+[บอทสาธาณะลำใย]
+❈[Id︎] 
+❈[Mid]
+❈[Me︎]
+❈[TL︎:「Text」]
+❈[Mc 「mid」]
+❈[K on/off]
+❈[Join︎ on/off]
+❈[Gcancel:︎「Number of people」]
+❈[Group cancelalll︎]
+❈[Leave︎ on/off]
+❈[Add on/off]
+❈[Share on/off]
+❈[Message change:「text」]
+❈[Message check]
+❈[Confirm]
+❈[Jam on/off]
+❈[Change clock:「name」]
+❈[Up]
+❈[Cv join]
+
+[*] ❄Command the groups❄ [*]
+
+❋[Curl]
+❋[Ourl]
+❋[url]
+❋[url:「Group ID」]
+❋[Invite：「mid」]
+❋[Kick：「mid」]
+❋[Ginfo]
+❋[jointicket]
+❋[Cancel]
+❋[Gn 「group name」]
+❋[Nk 「name」]
+
+[*] ❄Command kicker only❄ [*]
+
+✪[Bye]
+✪[Kill ban]
+✪[Kill 「@」]
+✪[Ban 「@」] By Tag
+✪[Unban 「@」] By Tag
+✪[Ban︎] Share Contact
+✪[Unban︎] Share Contact
+✪[Banlist︎]
+✪[Cek ban]
+✪[Cv mid]
+✪[Cv ︎invite:「mid」]
+✪[Cv ︎rename:「name」]
+✪[Cv ︎gift]
+✪[Respo︎n]
+✪[Bot cancel]
+✪[Title:]
 [❦〖Pђëŧ〗☞ᵀËÄMທஇລ❂قB❂T✓]
+[✍Ŧ€₳M ж Ħ₳ʗҜ฿❂Ŧ✈]
 [Ŧ€₳M✈ທஇລ❂قীள้௭ิњ]
 """
-profile, setting, tracer = client.getProfile(), client.getSettings(), LineTracer(client)
-offbot, messageReq, wordsArray, waitingAnswer = [], {}, {}, {}
-print client._loginresult()
-KAC = [cl,ki,kk,kc]
+KAC=[cl,ki,kk,kc]
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
 Cmid = kc.getProfile().mid
-Bots= [mid,Amid,Bmid,Cmid]
-admin = [ "u00f827ce6641038d7c9b6704a9777dfa" ]
+
+Bots=[mid,Amid,Bmid,Cmid]
+admin=["u00f827ce6641038d7c9b6704a9777dfa"]
 wait = {
 'contact' : True,
 'autoJoin' : True,
@@ -90,7 +96,7 @@ wait = {
 "wblack" : False ,
 "dblack" : False ,
 "clock" : True,
-"cName" : "Ŧ€₳M✈ທஇລ❂ق " ,
+"cName" : "Phet " ,
 "blacklist" :{},
 "wblacklist" : False ,
 "dblacklist" : False ,
