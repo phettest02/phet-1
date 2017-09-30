@@ -15,7 +15,7 @@ print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-helpMessage =""" ❇ Selfbot Phet hack bot ❇
+helpMessage =""" Selfbot
 [บอทสาธาณะลำใย]
 ❈[Id︎] 
 ❈[Mid]
@@ -112,7 +112,6 @@ wait2 = {
 setTime = {}
 setTime = wait2[ 'setTime' ]
 def sendMessage (to, text, contentMetadata = {}, contentType = 0 ):
-mes = Message()
 mes.to, mes.from_ = to, profile.mid
 mes.text = text
 mes.contentType, mes.contentMetadata = contentType, contentMetadata
